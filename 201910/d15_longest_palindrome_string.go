@@ -25,7 +25,7 @@ func FindLongestPalindromeString(param string) int {
 	longestPalindromeStrNum := 0
 	hasSingle := false
 	for _, num := range letterNum {
-		longestPalindromeStrNum = +longestPalindromeStrNum + (num/2)*2
+		longestPalindromeStrNum = longestPalindromeStrNum + (num/2)*2
 		if num%2 != 0 {
 			hasSingle = true
 		}
